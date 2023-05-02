@@ -24,7 +24,7 @@ clear
 
 cd ../
 
-
+wget https://raw.githubusercontent.com/Hzqkii/McServerAutoSetup/main/startserver.sh
 
 echo This script will now terminate itself you will need to edit the launch script for the server, use the command "nano $HOME/server/start.sh"
 echo change the "artefactname" to the name of the paper jar and change the 3 in "-Xmx3G and -Xmn3G" to what ever ram gb you want!
