@@ -1,6 +1,9 @@
 #!/bin/bash
 
-apt update && apt upgrade
+read -r -p "THIS IS ONLY FOR DEBIAN AND DEBAIN BASED SERVERS/DISTROS [y/N] " response
+if [[ "$response" =~ ^([yY][eE][sS]|[yY])$ ]]
+then
+    apt update && apt upgrade
 apt install unzip
 apt install openjdk-17-jdk openjdk-17-jre
 
@@ -28,3 +31,7 @@ wget https://raw.githubusercontent.com/Hzqkii/McServerAutoSetup/main/startserver
 
 echo This script will now terminate itself you will need to edit the launch script for the server, use the command "nano $HOME/server/startserver.sh"
 echo Change the 3 in "-Xmx3G and -Xmn3G" to what ever ram you want to allocate to the server!
+
+else
+    exit
+fi
