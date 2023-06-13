@@ -8,16 +8,16 @@ cd $HOME
 mkdir server
 cd server
 
-pv=1.19.4 #paper version
-bn=522 #paper build number
+pv=1.20.1 #paper version
+bn=18 #paper build number
 wget https://api.papermc.io/v2/projects/paper/versions/${pv}/builds/${bn}/downloads/paper-${pv}-${bn}.jar
 
 mkdir plugins
 
 cd plugins
 
-vvv=4.6.2 #viaversion version
-vbv=4.6.1 #viabackwards version
+vvv=4.7.0 #viaversion version
+vbv=4.7.0 #viabackwards version
 wget https://github.com/ViaVersion/ViaVersion/releases/download/${vvv}/ViaVersion-${vvv}.jar
 wget https://github.com/ViaVersion/ViaBackwards/releases/download/${vbv}/ViaBackwards-${vbv}.jar
 clear
