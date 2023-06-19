@@ -1,7 +1,7 @@
 #!/bin/bash
 
 read -r -p "THIS IS ONLY FOR DEBIAN AND DEBAIN BASED SERVERS/DISTROS [y/N] " response
-if [[ "$response" =~ ^([yY][eE][sS]|[yY])$ ]]
+if [[ "$response" =~ "^([yY][eE][sS]|[yY])$" ]]
 then
     apt update && apt upgrade
 apt install unzip
