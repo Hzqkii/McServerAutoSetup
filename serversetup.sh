@@ -12,7 +12,7 @@ then
     cd server
 
     pv=1.20.1 #paper version
-    bn=18 #paper build number
+    bn=69 #paper build number
     wget "https://api.papermc.io/v2/projects/paper/versions/${pv}/builds/${bn}/downloads/paper-${pv}-${bn}.jar"
 
     mkdir plugins
