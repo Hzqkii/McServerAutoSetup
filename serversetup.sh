@@ -3,9 +3,7 @@
 read -r -p "THIS IS ONLY FOR DEBIAN AND DEBAIN BASED SERVERS/DISTROS [y/N] " response
 if [[ "$response" = [Yy]* ]]
 then
-    apt update && apt upgrade
-    apt install unzip
-    apt install openjdk-17-jdk openjdk-17-jre
+    sudo apt update && sudo apt upgrade && sudo apt install openjdk-17-jdk openjdk-17-jre
 
     cd "$HOME"
     mkdir server
